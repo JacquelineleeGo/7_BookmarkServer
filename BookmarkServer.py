@@ -96,7 +96,7 @@ class Shortener(http.server.BaseHTTPRequestHandler):
                 # Delete the following line -- raise NotImplementedError("Step 2 isn't written yet.")
                 self.send_response(303)
                 self.send_header('Location', memory[name])
-                self.end_headers()
+            git     self.end_headers()
             else:
                 # We don't know that name! Send a 404 error.
                 self.send_response(404)
